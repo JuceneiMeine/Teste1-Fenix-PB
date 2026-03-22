@@ -1,0 +1,40 @@
+
+
+@media (max-width: 768px) {
+
+  .hamburger { display: block; }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px; left: 0; width: 100%;
+    background: var(--white);
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+
+  .nav-menu.active { display: flex; }
+
+   
+    /* Garante que a foto ocupe uma altura mínima visível no celular */
+    .foto-time-image {
+        flex: none; 
+        width: 100%;
+        height: 100%; /*Ajuste essa altura conforme desejar */
+        padding: 2px;
+        margin-bottom: .5rem;
+        border-radius: 1rem;
+    }
+
+    
+    /* Ajuste opcional para o título no celular */
+    .jargao-fenix {
+        font-size: 1rem; 
+        text-align: center;
+    }
+
+  
+
+}
+

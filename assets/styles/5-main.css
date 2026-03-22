@@ -1,0 +1,91 @@
+
+
+.main-container {
+  background-color: var(--palha-1);
+}
+
+.main-name {
+    
+  /* clamp(mínimo, ideal, máximo) */
+  font-size: clamp(1rem, 2vw, 3rem); 
+  color: var(--laranja-1);
+  
+  text-shadow: 2px 2px 20px var(--laranja-queimado);
+  
+  /* width: 100%;  */
+  /* Garante que ele use o espaço disponível */
+  
+  padding: .3rem;
+  text-align: center;
+
+  letter-spacing: .2rem;
+  word-spacing: .4rem;
+
+}
+
+
+.foto-container {
+  background-color: var(--palha-1);
+  /* max-width: 90%; */
+  justify-content: center;
+  
+  
+}
+
+.foto-time {  
+  
+  display: flex;   /* Transforma a div em um container flex */
+  flex-direction: column;  /* Organiza o conteúdo (o h1) em coluna (vertical) */
+  justify-content: flex-end;  /* Empurra o conteúdo para o final (baixo) do container */
+  color: var(--white);
+  padding: 5px;
+
+  /* background-color: red; */
+
+}
+
+.foto-time-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.jargao-fenix { 
+  font-size: clamp(1rem, 2vw, 3rem); 
+  width: 100%; 
+  text-align: center;
+  letter-spacing: .2rem;
+
+  /* 1. Cor do texto (mais clara para o centro do neon) */
+  color: var(--branco); 
+
+  /* 2. Camadas de Neon: quanto mais camadas, mais intenso o brilho */
+  text-shadow: 
+    0 0 5px var(--laranja-1),
+    0 0 10px var(--laranja-1),
+    0 0 20px var(--laranja-1),
+    0 0 40px var(--dourado-1);
+
+  /* 3. Chamada da animação: nome | duração | modo | repetição */
+  animation: neon-pulse 1.5s infinite alternate;
+}
+
+/* 4. Definição do efeito de piscar */
+@keyframes neon-pulse {
+  from {
+    opacity: 1;
+    text-shadow: 
+      0 0 5px var(--laranja-1),
+      0 0 10px var(--laranja-1),
+      0 0 20px var(--laranja-1),
+      0 0 40px var(--dourado-1);
+  }
+  to {
+    opacity: 0.4; /* O "piscar" acontece reduzindo a opacidade e o brilho */
+    text-shadow: 0 0 2px var(--laranja-1);
+  }
+}
+
+
+
+

@@ -1,0 +1,21 @@
+.nav-menu { 
+  display: flex; 
+  list-style: none; 
+  gap: 20px; 
+}
+
+.nav-menu a { 
+  text-decoration: none; 
+  color: var(--dark); 
+  font-weight: 600; 
+  transition: 0.3s; 
+}
+
+.nav-menu a:hover { color: var(--primary); }
+
+.hamburger { 
+  display: none; 
+  font-size: 1.5rem; 
+  cursor: pointer; 
+}
+
