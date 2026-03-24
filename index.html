@@ -14,80 +14,95 @@
 
     <link rel="icon" type="image/webp" href="./assets/images/logo-fenix-favicon.webp">
     
-    <title>Câmbio Fênix-PB</title>
+    <title>Câmbio Fênix PB</title>
     
 </head>
 
 <body>
     
-    <header class="header-container">
-        <div class="header-logo">
-            <a href="index.html">
-                <img class="header-logo-image" src="./assets/images/logo-fenix.webp" alt="Logo Câmbio Fênix-PB"></a>
-        </div>
+  <header class="header-container">
+    <div class="header-logo">
+      <a href="index.html">
+          <img class="header-logo-image" src="./assets/images/logo-fenix-redimensionada.webp" alt="Logo Câmbio Fênix-PB"></a>
+    </div>
+  
+    <div class="hamburger" id="hamburgerBtn">
+        <i class="fas fa-bars"></i>
+    </div>
 
-    <div class="main-name"><h1>Câmbio FÊNIX-PB</h1></div>
-    
-        <div class="hamburger" id="hamburgerBtn">
-            <i class="fas fa-bars"></i>
-        </div>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#quem-somos">Quem Somos</a></li>
+      <li><a href="#atividades">Atividades</a></li>
+      <li><a href="#eventos">Eventos</a></li>
+      <li><a href="#contatos">Contatos</a></li>
+    </ul>
+  </header>
 
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="#quem-somos">Quem Somos</a></li>
-            <li><a href="#atividades">Atividades</a></li>
-            <li><a href="#eventos">Eventos</a></li>
-            <li><a href="#contatos">Contatos</a></li>
-        </ul>
-    </header>
+  <main>
+    <div class="name-fenix"><h1>Câmbio FÊNIX PB</h1></div>
+  
+    <div class="carousel-container">
+      <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+      
+      <div class="slides" id="slideTrack">
+          <div class="slide">
+              <img src="sua-foto1.jpg" alt="Descrição 1">
+              <div class="caption">Descrição da Foto 1 - Centralizada
+              </div>
+          </div>
+          <div class="slide">
+              <img src="sua-foto2.jpg" alt="Descrição 2">
+              <div class="caption">Descrição da Foto 2 - Centralizada
+              </div>
+          </div>
+      </div>
 
-    <main class="main-container">
+      <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </main>
 
-        <div class="main-name"><h1>Câmbio FÊNIX-PB</h1></div>
 
-        <section class="foto-container">
-            <div class="foto-time">  
-                <a href="index.html">
-                    <img class="foto-time-image" src="./assets/images/time-fenix.webp" alt="Nome da Empresa"></a>
-            </div>
 
-            <div class="jargao-fenix">
-                <h2>Bora treinar e ser feliz!</h2>        
-            </div>
-        </section>
 
-        
 
-        <section id="quem-somos" class="about-section">
-            <h2>Quem Somos</h2>
-            <p>O <strong>Câmbio</strong> é uma modalidade de voleibol adaptado que promove a saúde e a interação social, especialmente entre idosos na Paraíba. Nosso projeto foca na qualidade de vida e no espírito de equipe.</p>
-        </section>
+  
+  
+    <div class="jargao-fenix">
+          <h2>Bora treinar e ser feliz!</h2>        
+      </div>
 
-    </main>
+    <section id="quem-somos" class="about-section">
+      <h2>Quem Somos</h2>
+      <p>O <strong>Câmbio</strong> é uma modalidade de voleibol adaptado que promove a saúde e a interação social, especialmente entre idosos na Paraíba. Nosso projeto foca na qualidade de vida e no espírito de equipe.</p>
+    </section>
 
-        <section id="contact-container" class="contact-section">
-            <h2>Contatos</h2>
 
-            <div class="contact-grid">
-                <p class="fas fa-envelope">contato@cambiopb.com.br</p>
-                <p class="fas fa-phone">(51) 9 9423-5409 - Marinês</p>
-                <p class="fas fa-phone">(83) 9 9999-9999 - Beth</p>
-                <p class="fas fa-phone">(83) 9 9999-9999 - Helena</p>
-            </div>
-        </section>
+  <section id="contact-container" class="contact-section">
+    <h2>Contatos</h2>
 
-        <section class="social-container">
-            <a href="https://www.instagram.com/SEU_USUARIO/" class="float-btn float-insta" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-instagram"></i></a>
+    <div class="contact-grid">
+      <p class="fas fa-envelope">contato@cambiopb.com.br</p>
+      <p class="fas fa-phone">(51) 9 9423-5409 - Marinês</p>
+      <p class="fas fa-phone">(83) 9 9999-9999 - Beth</p>
+      <p class="fas fa-phone">(83) 9 9999-9999 - Helena</p>
+    </div>
+  </section>
 
-            <a href="https://wa.me/5583999180699?text=Olá! Gostaria de mais informações sobre o Câmbio PB." class="float-btn float-whats" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-whatsapp"></i></a>
-        </section>
+  <section class="social-container">
+    <a href="https://www.instagram.com/SEU_USUARIO/" class="float-btn float-insta" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-instagram"></i></a>
 
-    <footer>
-        <p>&copy; 2026 Câmbio Fênix-PB - Esporte e Inclusão.</p>
-    </footer>    
+    <a href="https://wa.me/5583999180699?text=Olá! Gostaria de mais informações sobre o Câmbio PB." class="float-btn float-whats" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-whatsapp"></i></a>
+  </section>
 
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 17 de Abril de 2025</p>
+    <p>Câmbio FÊNIX PB</p>
+    <p>Bora treinar e ser Feliz</p>
+  </footer>    
+
+  <script src="script.js"></script>
 
 </body>
 

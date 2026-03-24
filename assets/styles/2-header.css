@@ -5,13 +5,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5%;
+  padding: .2rem 5%;
+  margin-top: .2rem;
+  border-radius: .3rem;
   
   /* box-shadow: 0 2px 5px var(--laranja-3); */
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color:khaki;
+  background-color: var(--amarelo-7);
 
   /* margin-bottom: .3rem; */
 }
@@ -20,15 +22,16 @@
 
 .header-logo-image {
   /* background-color: red; */
+
+  padding-left: 1rem;
+
   max-width: 100%; 
-  /* Garante que a logo não ultrapasse o tamanho da tela no celular */
+  /* logo não ultrapassar o tamanho da tela no celular */
   
-  /* height: auto;     */
+  height: auto;    
   /* Mantém a proporção correta */
   
-  width: 180px;
   
-  height: 110px;
 }
 
 

@@ -17,7 +17,22 @@
 
 body { /* Estilo visual do corpo inteiro da página */
 
-  background: var(--amarelo-9); 
+  display: flex;
+  flex-direction: column; /* Organiza os itens em coluna (um abaixo do outro) */
+  min-height: 100vh;      /* Ocupa no mínimo a altura total da tela */
+  
+
+  margin: 0 auto; 
+  /* Centraliza o conteúdo horizontalmente */
+
+  padding: 0 .3rem;
+  /* Evita que o conteúdo encoste nas bordas em celulares */
+
+  max-width: 1200px;
+  /* Define a largura máxima (ex: 1200px é um padrão comum) */
+    
+
+  background: var(--creme-2); 
   /* COR DE FUNDO da página */
 
   color: var(--preto);
@@ -40,10 +55,10 @@ body { /* Estilo visual do corpo inteiro da página */
   --palha-1:#FAFAD2;
 
   --creme-1:#ffff94;
-  --creme-1:#fdfbd4;
-  --creme-1:#e5dbce;
-  --creme-1:#fff0c9;
-  --creme-1:#ede8d0;
+  --creme-2:#fdfbd4;
+  --creme-3:#e5dbce;
+  --creme-4:#fff0c9;
+  --creme-5:#ede8d0;
   
   --amarelo-1:#FFD700;
   --amarelo-2:#FFDF00;
