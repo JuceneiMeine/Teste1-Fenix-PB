@@ -1,0 +1,186 @@
+
+
+/* --- CONTAINER PRINCIPAL - MAIN --- */
+
+main {
+  flex: 1;                
+  /* Faz essa área 'esticar' e ocupar o espaço entre header e footer */
+  
+  display: flex;
+  
+  flex-direction: column; 
+  /* Organiza os itens em coluna (um abaixo do outro) */
+  
+  min-height: 100vh;      
+  /* Ocupa no mínimo a altura total da tela */
+  
+  justify-content: center; 
+  /* Centraliza o carousel horizontalmente */
+  
+  align-items: center;     
+  /* Centraliza o carousel verticalmente no espaço que sobrou */
+}
+
+.carousel-container {
+  /* display: flex; */
+    width: 70%; /* Desktop */
+    height: 60vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    border-radius: 8px;
+}
+
+/* Ajuste para Celular */
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 90%;
+        height: 50vh; /* Ajuste leve na altura para mobile */
+    }
+}
+
+.slides {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Garante que a foto não seja cortada */
+}
+
+/* Descrição centralizada na parte inferior */
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    text-align: center;
+    width: 80%;
+}
+
+/* Botões de navegação simples */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.3);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    z-index: 10;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+
+
+
+
+
+
+
+.name-fenix {
+    
+  /* clamp(mínimo, ideal, máximo) */
+  font-size: clamp(1rem, 2vw, 3rem); 
+  color: var(--laranja-queimado);
+  
+  text-shadow: 2px 2px 20px var(--amarelo-4);
+  
+  width: 100%; 
+  /* Garante que ele use o espaço disponível */
+  
+  
+  text-align: center;
+
+  letter-spacing: .2rem;
+  word-spacing: .4rem;
+
+}
+
+
+.foto-container {
+  background-color: var(--palha-1);
+  /* max-width: 90%; */
+  justify-content: center;
+  
+  background-color: red;
+  
+}
+
+.foto-time {  
+  
+  display: flex;   /* Transforma a div em um container flex */
+  
+  width: auto;
+    
+  padding: .1rem;
+
+  background-color: blue;
+
+}
+
+.foto-time-image {
+  
+  border-radius: 1rem;
+}
+
+.jargao-fenix { 
+  font-size: clamp(1rem, 2vw, 3rem); 
+  width: 100%; 
+  text-align: center;
+  letter-spacing: .2rem;
+
+  /* 1. Cor do texto (mais clara para o centro do neon) */
+  color: var(--amarelo-1); 
+
+  /* 2. Camadas de Neon: quanto mais camadas, mais intenso o brilho */
+  text-shadow: 
+    0 0 5px var(--laranja-9),
+    0 0 10px var(--laranja-8),
+    0 0 15px var(--laranja-1);
+
+  /* 3. Chamada da animação: nome | duração | modo | repetição */
+  animation: neon-pulse 1.5s infinite alternate;
+}
+
+/* 4. Definição do efeito de piscar */
+@keyframes neon-pulse {
+  from {
+    opacity: 1;
+    text-shadow: 
+      0 0 5px var(--laranja-1),
+      0 0 10px var(--laranja-1),
+      0 0 15px var(--laranja-1);
+  }
+  to {
+    opacity: 0.4; /* O "piscar" acontece reduzindo a opacidade e o brilho */
+    text-shadow: 0 0 2px var(--laranja-1);
+  }
+}
+
+
+
+
