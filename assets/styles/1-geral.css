@@ -1,0 +1,379 @@
+/*
+=============================================================
+RESET
+=============================================================
+*/
+
+* { 
+  margin: 0; 
+  padding: 0;  /* Zerar margens automáticas dos navegadores */
+  box-sizing: border-box;  /* Impedir o padding/borda aumentar o tamanho total do Elm */
+}
+
+/*
+=============================================================
+ESTILOS GLOBAIS
+=============================================================
+*/
+
+body { /* Estilo visual do corpo inteiro da página */
+
+  display: flex;
+  flex-direction: column; 
+      /* Organiza os itens em coluna (um abaixo do outro) */
+  min-height: 100vh;      
+      /* Ocupa no mínimo a altura total da tela */
+  margin: 0 auto; 
+      /* Centraliza o conteúdo horizontalmente */
+  padding: 0 .3rem;
+      /* Evita que o conteúdo encoste nas bordas em celulares */
+  max-width: 1200px;
+      /* Define a largura máxima (ex: 1200px é um padrão comum) */    
+  background: var(--creme-2); 
+      /* COR DE FUNDO da página */
+  color: var(--preto);
+      /* COR DO TEXTO padrão da página  */
+  overflow-x: hidden; 
+      /* Previne aparecer BARRA ROLAGEM HORIZONTAL (parte inferior) */
+  
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  line-height: 1.6; 
+}
+
+/* FONTE - Títulos com Montserrat */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; /* Opcional, combina muito com a Montserrat */
+}
+
+/* FONTE - Detalhes ou formulários com Roboto */
+label, span, p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/*
+=============================================================
+HEADER
+=============================================================
+*/
+
+.header-container {
+  display: flex;
+  gap: 1.8rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-top: .2rem;
+  border-radius: .3rem;  
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--amarelo-7);
+}
+
+/*==================== LOGO ====================*/
+
+.header-logo {
+
+}
+
+.header-logo-image {  
+  padding-left: 1rem;
+  max-width: 100%; 
+      /* logo não ultrapassar o tamanho da tela no celular */
+  height: auto;    
+      /* Mantém a proporção correta */    
+}
+
+/*==================== SOCIAL ====================*/
+
+.social-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center
+}
+
+.float-btn {
+  display: flex;
+  gap: 10px;
+  align-items: center  ;
+  /* Removemos o position: fixed */
+  
+  width: 35px;  /* Reduzi o tamanho para caber no header */
+  height: 35px;
+  border-radius: 50%;
+  color: white;
+  
+  justify-content: center;
+  font-size: 1.2rem; /* Ícone um pouco menor */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 10;
+  text-decoration: none;  
+}
+  
+.float-insta {   
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+
+.float-whats {   
+  background: #25d366; 
+}
+
+.fab {
+
+}
+
+.fa-instagram {
+
+}
+
+.fa-whats {
+
+}
+
+/*==================== HAMBURGUER ====================*/
+
+.hamburger { 
+  display: none; 
+  font-size: 1.5rem; 
+  cursor: pointer; 
+}
+
+.fas {
+
+}
+
+.fa-bars {
+
+}
+
+.nav-menu { 
+  display: flex; 
+  list-style: none; 
+  gap: 20px; 
+  /* background-color: red; */
+}
+
+.nav-menu a { 
+  text-decoration: none; 
+  color: var(--laranja-queimado); 
+  font-weight: 600; 
+  transition: 0.3s; 
+  padding: .2rem;
+}
+
+.nav-menu a:hover { color: var(--abobora); }
+
+/*
+=============================================================
+MAIN - CONTAINER
+=============================================================
+*/
+
+.main-container {
+  flex: 1;                
+  /* Faz essa área 'esticar' e ocupar o espaço entre header e footer */
+
+  width: 100%;
+  max-width: 1200px; /* Limita a largura em monitores muito grandes */
+  margin: 0 auto;    /* Centraliza o carrossel na página */
+  padding: 20px;     /* Espaçamento interno opcional */
+  display: flex;
+  
+  flex-direction: column; 
+  /* Organiza os itens em coluna (um abaixo do outro) */
+  
+  justify-content: center; 
+  /* Centraliza o carousel horizontalmente */
+  
+  align-items: center;     
+  /* Centraliza o carousel verticalmente no espaço que sobrou */
+}
+
+.name-fenix {
+    
+  /* clamp(mínimo, ideal, máximo) */
+  font-size: clamp(.8rem, 2vw, 3rem); 
+  color: var(--laranja-queimado);
+  
+  text-shadow: 2px 2px 20px var(--amarelo-4);
+  
+  width: 100%; 
+  /* Garante que ele use o espaço disponível */
+  
+  
+  text-align: center;
+
+  letter-spacing: .2rem;
+  word-spacing: .4rem;
+
+}
+
+/*
+=============================================================
+CAROUSEL - CONTAINER
+=============================================================
+*/
+.carousel-container {
+  /* display: flex; */
+
+  width: 65%;  /* Desktop */
+  height: 60vh;      /* Altura baseada na tela do usuário */
+  min-height: 300px; /* Impede que fique minúsculo no celular */
+  max-height: 600px; /* Impede que fique gigante em telas 4K */
+  overflow: hidden;  /* Garante que nada saia para fora */
+  border-radius: 12px; /* Estética moderna */
+  position: relative;
+   
+  overflow: hidden;
+  background: #000;    
+}
+
+/* Botões de navegação simples */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.3);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.slides {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Garante que a foto não seja cortada */
+}
+
+/* Descrição centralizada na parte inferior */
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    text-align: center;
+    width: 80%;
+}
+
+/*
+=============================================================
+FENIX - JARGAO
+=============================================================
+*/
+
+.jargao-fenix { 
+  font-size: clamp(1rem, 2vw, 3rem);
+  color: var(--abobora); 
+  width: 100%; 
+  text-align: center;
+  letter-spacing: .2rem;
+}
+
+/*
+=============================================================
+FENIX - QUEM SOMOS
+=============================================================
+*/
+
+.quem-somos-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+
+/*
+=============================================================
+CONTATOS-CONTAINER
+=============================================================
+*/
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.contact-informations {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem ;
+}
+
+.contact-item {
+  padding: .3rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fas {
+
+}
+
+.fa-envelope {
+
+}
+
+.fa-phone {
+  
+}
+
+/*
+=============================================================
+FOOTER
+=============================================================
+*/
+
+footer { 
+
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  
+  background-color: var(--grafite-azul); 
+  color: var(--amarelo-2); 
+  text-align: center; 
+  letter-spacing: .1rem;
+  padding: .4rem; 
+}
+
+
+/*
+=============================================================
+
+=============================================================
+*/
+

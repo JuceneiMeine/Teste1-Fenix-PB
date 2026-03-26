@@ -1,12 +1,25 @@
 /* style.css */
 
-@import url('./assets/styles/1-reset.css');
-@import url('./assets/styles/2-header.css');
-@import url('./assets/styles/3-nav.css');
-@import url('./assets/styles/5-main.css');
+@import url('./assets/styles/0-reset.css');
+@import url('./assets/styles/0-cores.css');
+
+@import url('./assets/styles/1-geral.css');
+
+@import url('./assets/styles/2-header__nav.css');
+
+@import url('./assets/styles/4-main.css');
+@import url('./assets/styles/6-sections.css');
 @import url('./assets/styles/7-social.css');
 @import url('./assets/styles/8-footer.css');
 @import url('./assets/styles/9-responsividade.css');
+
+
+/* --- FONTES --- */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,700&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+
 
 
 

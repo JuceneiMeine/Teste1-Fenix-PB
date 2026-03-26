@@ -16,6 +16,13 @@
 
   .nav-menu.active { display: flex; }
 
+     
+    .carousel-container {
+        width: 95%;
+        height: 50vh; /* Ajuste leve na altura para mobile */
+    }
+
+
    
     /* Garante que a foto ocupe uma altura mínima visível no celular */
     .foto-time-image {
@@ -27,11 +34,16 @@
         border-radius: 1rem;
     }
 
+    .name-fenix {
+        max-width:95vw;
+    }
     
     /* Ajuste opcional para o título no celular */
     .jargao-fenix {
-        font-size: 1rem; 
-        text-align: center;
+      font-size: clamp(.8rem, 2vw, 3rem);
+      color: var(--ouro-1);
+      text-align: center;
+      ba
     }
 
   

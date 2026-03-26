@@ -1,0 +1,51 @@
+/*
+=============================================================
+CORES PADRONIZADAS
+=============================================================
+*/
+:root {
+  --branco:#fff;
+  --preto:#222;
+  --palha-1:#FAFAD2;
+  --creme-1:#ffff94;
+  --creme-2:#fdfbd4;
+  --creme-3:#e5dbce;
+  --creme-4:#fff0c9;
+  --creme-5:#ede8d0;
+  --amarelo-1:#FFD700;
+  --amarelo-2:#FFDF00;
+  --amarelo-3:#FFFF00;
+  --amarelo-4:#e6f200;
+  --amarelo-5:#F1E702;
+  --amarelo-6:#F5EF52;
+  --amarelo-7:#F8F27C;
+  --amarelo-8:#FAF493;
+  --amarelo-9:#FAF7A9;
+  --ouro-1:#b28405;
+  --ouro-2:#DAA520;  
+  --ouro-3:#d4a413;
+  --ouro-4:#fbc02d;  
+  --ouro-5:#efb810;  
+  --ouro-6:#f3c332;
+  --ouro-7:#E5C100;  
+  --ouro-8:#f9db5c;
+  --marrom-1:#795300;
+  --marrom-4:#cc8105;
+  --marrom-5:#c97900;    
+  --salmom-1:#f7b666;
+  --salmom-2:#fcb743;
+  --laranja-1:#FF4D00;
+  --laranja-2:#e65729 ;
+  --laranja-3:#ff5c00;
+  --laranja-4:#e07601;  
+  --laranja-5:#FF8C00;  
+  --laranja-6:#f28500;  
+  --laranja-7:#ed9600;
+  --laranja-8:#f6961f;
+  --laranja-9:#ffa500; 
+  --laranja-queimado:#CC5500;
+  --abobora:#FF7518;
+  --grafite-2:#4e4949;
+  --grafite-1:#2e2e2e;
+  --grafite-azul:#474a51;
+}
